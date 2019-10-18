@@ -1,6 +1,6 @@
 #language:pt
 
-Funcionalidade: Realizar a Criação de Quaadr
+Funcionalidade: Realizar a Criação de Quadro
   Eu como usuário desejo ter acesso ao sistema para que eu possa utiliza-lo
 
 @cenarioProvaPratica
@@ -43,16 +43,16 @@ Quando ele enviar uma requisição de criação para Api informando um Token inv
 Então não deve ser criado o Quadro
 
 @cenario
-Cenário: Executar requisição de Criação de Listar informando Key inválida
+Cenário: Executar requisição de Criação de Listas informando Key inválida
 Dado que o usuário possui acesso a criação de Listas
 Quando ele enviar uma requisição de criação para Api informando uma key inválida
-Então não deve ser criado o Listas
+Então não deve ser criado a Lista
 
 @cenario
 Cenário: Executar requisição de Criação de Listas informando Token inválida
 Dado que o usuário possui acesso a criação de Listas
 Quando ele enviar uma requisição de criação para Api informando um Token inválido
-Então não deve ser criado o Listas
+Então não deve ser criado a Lista
 
 @cenario
 Cenário: Executar requisição de Cartão informando Key inválida

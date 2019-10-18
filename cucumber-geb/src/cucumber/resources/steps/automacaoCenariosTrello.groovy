@@ -38,8 +38,6 @@ Dado(~/que o usuário cria um '(.*)'/) { String boardName->
 
    // assegura que o board foi criado corretamente, testando se o id foi retornado
    assert boardResponse.json.id != null
-   println "responsivo"
-println boardResponse
 
   }
 
@@ -67,7 +65,7 @@ Dado(/a Lista é criada com sucesso/) {  ->
 
   assert listId != null
   
-  println "listid"
+  println "Id da Lista:"
   println listId
 }
 
@@ -88,7 +86,7 @@ Quando(/o Cartão é criado com sucesso/){ ->
 
 cardId = cardResponse.json.id.trim()
 
- println "card iddddd"
+ println "Id do Card:"
  println cardId
 
  assert cardId != null
