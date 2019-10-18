@@ -6,8 +6,7 @@ import static cucumber.api.groovy.Hooks.*
 import geb.Browser
 import geb.binding.BindingUpdater
 import pages.*
-import wsclient.WSSoapClient
-import db.DBAccess
+//import wsclient.WSSoapClient
 import repository.MemoryRepository
 import geb.driver.CachingDriverFactory
 
@@ -65,11 +64,9 @@ After { scenario ->
 
 def bindVariables(){
 	if(!binding.hasVariable("soapClient")){
-		binding.setVariable("soapClient", new WSSoapClient())
+		//binding.setVariable("soapClient", new WSSoapClient())
 	}
-	if(!binding.hasVariable("db")){
-		binding.setVariable("db", new DBAccess(new File("database.properties")))
-	}
+	
 	if(!binding.hasVariable("repo")){
 		binding.setVariable("repo", new MemoryRepository())
 	}
